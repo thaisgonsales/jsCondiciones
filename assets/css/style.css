@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #87cefa9d;
+    display: flex;
+    justify-content: center;
+    padding-top: 10em;
+}
+
+img{
+    width: 300px;
+}

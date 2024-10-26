@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers</title>
+    <link rel="stylesheet" href="./assets/css/style2.css">
+</head>
+
+<body>
+    <main>
+        <h1>Puedes llevar hasta 10 stickers en el total </h1>
+
+        <div class="container">
+            <div class="adesivos">
+
+                <div class="inputs">
+                    <img src="./assets/img/stitch1.png" alt="Sticker Stitch">
+                    <input id="stickers1" type="text">     
+                </div>
+                              
+                <div class="inputs">
+                    <img src="./assets/img/stitch2.png" alt="Sticker Stitch">
+                    <input id="stickers2" type="text">
+                </div>
+    
+                <div class="inputs">
+                    <img src="./assets/img/stitch3.png" alt="Sticker Stitch">
+                    <input id="stickers3" type="text">
+                </div>
+                
+            </div>
+        </div>
+
+        <p id="resultado"></p>
+
+        <div class="btn">
+            <button onclick="
+            input1 = Number(document.querySelector('#stickers1').value)
+            input2 = Number(document.querySelector('#stickers2').value)
+            input3 = Number(document.querySelector('#stickers3').value)
+
+            total = input1 + input2 + input3
+
+            if (total == 10) {
+            document.querySelector('#resultado').innerHTML = 'Puedes llevar 10 stickers'
+
+            }else {
+            document.querySelector('#resultado').innerHTML = 'Lo siento, llevas demasiado stickers'
+            }
+            
+            ">
+                Verificar
+            </button>
+        </div>
+    </main>
+</body>
+
+</html>
